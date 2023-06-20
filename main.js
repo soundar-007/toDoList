@@ -12,7 +12,7 @@ function AddTask() {
     li = document.createElement("li");
     li.innerHTML = input.value;
     li.className = "list-items";
-    li.addEventListener("click", check);
+    li.setAttribute("onclick", "check(event)");
     const span = document.createElement("span");
     span.innerHTML = `<i class="fi fi-rr-trash"></i>`;
     li.appendChild(span);
