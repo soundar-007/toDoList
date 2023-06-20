@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background-color: #e7cea6bc;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  padding: 20px;
+  text-align: center;
+  margin: 10px auto;
+  font-family: "Merriweather", serif;
+  font-size: 23px;
+}
+.container-1 {
+  margin: 70px auto;
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 1px rgba(34, 31, 31, 0.298);
+  border-radius: 5px;
+  user-select: none;
+  flex-shrink: 1;
+}
+input {
+  width: 360px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+
+  outline: none;
+  border: none;
+  background: transparent;
+  background-color: rgb(244, 226, 226);
+}
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 1px rgba(25, 22, 22, 0.115);
+  background-color: rgb(244, 226, 226);
+}
+.container-2 {
+  margin: 20px auto;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(34, 31, 31, 0.298);
+  border-radius: 8px;
+}
+.task-list .list-items {
+  list-style: none;
+
+  color: rgba(37, 10, 10, 0.674);
+  padding: 7px;
+  font-size: 19px;
+  padding-left: 32px;
+  margin: 5px 0px;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  user-select: none;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.list-items::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(221, 165, 44);
+  position: absolute;
+  left: 8px;
+  top: 17px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+.checked::before {
+  content: "";
+  background-image: url("images/checked.png");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-color: beige;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 14px;
+}
+
+span {
+  position: absolute;
+
+  right: 10px;
+}
+.container-3 {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container-3 > img {
+  width: 460px;
+  height: 250px;
+}
+h2 {
+  margin-top: 10px;
+}
+@media (max-width: 576px) {
+  .container-1 {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 30px auto;
+    margin-bottom: 30px;
+  }
+  input {
+    flex-basis: 70%;
+  }
+  .container-2 {
+    width: 360px;
+  }
+  .container-3 > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
